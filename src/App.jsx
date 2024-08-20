@@ -1,36 +1,6 @@
-import reactImg from "./assets/react-core-concepts.png";
+import Header from "./components/Header.jsx";
+import CoreConcept from "./components/CoreConcept.jsx";
 import { CORE_CONCEPTS } from "./data.js";
-
-const reactDescriptions = ["Fundamental", "Crucial", "Core", "Essential"];
-
-function getRandomInt() {
-  return Math.floor(Math.random() * reactDescriptions.length);
-}
-
-function Header() {
-  const description = reactDescriptions[getRandomInt()];
-  return (
-    <header>
-      <img src={reactImg} alt="stylised atom" />
-      <h1>React Essentials</h1>
-      <p>
-        {description} React concepts you will need for almost any app you are
-        going to build!
-      </p>
-    </header>
-  );
-}
-
-// Using object destructuring with props
-function CoreConcept({image, title, description}) {
-  return (
-    <li>
-      <img src={image} alt={title} />
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </li>
-  );
-}
 
 function App() {
   return (
