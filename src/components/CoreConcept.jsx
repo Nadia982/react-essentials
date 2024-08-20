@@ -1,4 +1,4 @@
-
+import "./CoreConcept.css"
 // Using object destructuring with props
 export default function CoreConcept({image, title, description}) {
     return (
