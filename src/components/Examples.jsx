@@ -27,8 +27,7 @@ const Examples = () => {
   return (
     <Section title="Examples" id="examples">
       {/* <Tabs buttonsContainer={Section} */}
-      <Tabs ButtonsContainer="menu"
-        buttons={
+      <Tabs buttons={
           <>
             <TabButton
               isSelected={selectedTopic === "components"}
